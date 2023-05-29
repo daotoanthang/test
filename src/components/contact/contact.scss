@@ -1,0 +1,66 @@
+.box-contact {
+  cursor: pointer;
+  opacity: 1;
+  transform: none;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  box-shadow: rgba(29, 31, 34, 0.25) 0px 4px 28px 0px;
+  padding: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+  transition: 0.3s;
+
+  .card-logo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    span {
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      width: initial;
+      height: initial;
+      background: none;
+      opacity: 1;
+      border: 0px;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      inset: 0px;
+      img {
+        position: absolute;
+        inset: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+        border: none;
+        margin: auto;
+        display: block;
+        width: 0px;
+        height: 0px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  p {
+    margin: 0.5em 0px 0px;
+  }
+}
+
+.box-contact:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

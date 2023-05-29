@@ -1,0 +1,186 @@
+.pricing-plans {
+  gap: 32px;
+  display: flex;
+    // flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 64px;
+}
+
+.pricing-card {
+  --col: #e4e4e7;
+  position: relative;
+  padding: 32px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+  background-color: #26262620;
+  box-shadow: 0 0 32px transparent;
+  text-align: center;
+
+  max-width: 380px; // 323232
+}
+
+.pricing-card.basic {
+  --col: #dbcca4;
+
+  border: 1px solid #e4e4e7;
+}
+
+.pricing-card.standard {
+  --col: #604ddd ;
+  border: 1px solid #e4e4e7;
+}
+
+.pricing-card.premium {
+  --col: #f12011;
+  border: 1px solid #e4e4e7;
+}
+
+.pricing-card:hover {
+  border-color: var(--col);
+  background-color: #26262680;
+  box-shadow: 0 0 32px #171717;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.pricing-card > *:not(:last-child) {
+  // margin-bottom: 32px;
+}
+
+.pricing-card .heading h4 {
+  padding-bottom: 12px;
+
+  // color: #e4e4e7;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pricing-card .heading p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .price {
+  left: -16px;
+  position: relative;
+  // color: var(--col);
+  color: #e4e4e7;
+   
+  font-size: 44px;
+  font-weight: bold;
+}
+
+
+.price-friend {
+  background: #cf0700;
+  background: linear-gradient(
+    to bottom,
+    #cf0700 22%,
+    #cf0000 26%,
+    #cf4529 27%,
+    #ff0000 40%,
+    #ad1106 78%
+  );
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 30px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .features li {
+  padding-bottom: 16px;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.pricing-card .features li i,
+.pricing-card .features li strong {
+  color: #e4e4e7;
+  // font-size: 20px;
+  text-align: left;
+}
+
+.pricing-card .features li i {
+  font-size: 20px;
+  color: rgb(32, 182, 212);
+}
+
+.pricing-card .features li strong {
+  padding-left: 24px;
+}
+
+.pricing-card .cta-btn {
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
+  background: rgb(32, 182, 212);
+  background: linear-gradient(
+    180deg,
+    rgba(32, 182, 212, 1) 0%,
+    rgba(6, 179, 231, 1) 54%,
+    rgba(20, 177, 245, 0.9) 100%,
+    rgba(28, 192, 221, 1) 100%,
+    rgba(56, 231, 224, 1) 100%
+  );
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+.friend-text {
+  background: #cf0700;
+  background: linear-gradient(
+    to bottom,
+    #cf0700 22%,
+    #cf0000 26%,
+    #cf4529 27%,
+    #ff0000 40%,
+    #ad1106 78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-member {
+  background: linear-gradient(
+    to bottom,
+    #cfc09f 22%,
+    #634f2c 24%,
+    #cfc09f 26%,
+    #cfc09f 27%,
+    #ffecb3 40%,
+    #3a2c0f 78%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
+
+.diamond-member {
+  
+  background: #383dcf;
+  background: linear-gradient(
+    to bottom,
+    #383dcf 10%,
+    #3a0ccf 26%,
+    #6763cf 28%,
+    #4f19ff 49%,
+    #0c0cad 84%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
